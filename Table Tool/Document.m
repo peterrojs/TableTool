@@ -1150,6 +1150,6 @@ writeRowsWithIndexes:(NSIndexSet *)rowIndexes
 }
 
 -(IBAction)openReadme:(id)sender {
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/jakob/TableTool/blob/master/README.md"]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/jakob/TableTool/blob/main/README.md"]];
 }
 @end

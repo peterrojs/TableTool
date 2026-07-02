@@ -1,4 +1,4 @@
-<img style='margin: 0 auto' src="https://github.com/jakob/TableTool/raw/master/Table%20Tool/Images.xcassets/AppIcon.appiconset/icon_128x128@2x.png" width=128 height=128>
+<img style='margin: 0 auto' src="https://github.com/jakob/TableTool/raw/main/Table%20Tool/Images.xcassets/AppIcon.appiconset/icon_128x128@2x.png" width=128 height=128>
 
 # Table Tool 
 
@@ -6,7 +6,7 @@ A simple CSV editor for OS X.
 
 Download the latest version from [GitHub Releases](https://github.com/peterrojs/TableTool/releases/latest).
 
-<img style='margin: 0 auto' src="https://github.com/jakob/TableTool/raw/master/Artwork/Screenshots/2016-06-08 Tabletool 1.1 Customers.jpg" width=800 height=500>
+<img style='margin: 0 auto' src="https://github.com/jakob/TableTool/raw/main/Artwork/Screenshots/2016-06-08 Tabletool 1.1 Customers.jpg" width=800 height=500>
 
 The CSV format is a common used file format to store and exchange tabular data. 
 Almost all spreadsheet and database apps (e.g. Excel and Numbers) support it.
@@ -47,4 +47,4 @@ TableTool seeks to be a great and simple CSV file editor and nothing more. Any f
 
 ## Licence
 
-Table Tool is distributed under the [MIT Licence](https://github.com/jakob/TableTool/blob/master/LICENSE).
+Table Tool is distributed under the [MIT Licence](https://github.com/jakob/TableTool/blob/main/LICENSE).
