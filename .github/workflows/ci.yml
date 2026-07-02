@@ -7,9 +7,8 @@ on:
 
 jobs:
   build-and-test:
-    # macos-15 is the current GA Apple Silicon runner (Xcode 16.x).
-    # Switch to macos-26 for SDK parity with local builds once it's GA.
-    runs-on: macos-15
+    # macos-26 provides SDK parity with newer local Xcode/macOS builds.
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
 
