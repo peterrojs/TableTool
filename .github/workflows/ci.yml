@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  build-and-test:
+    # macos-15 is the current GA Apple Silicon runner (Xcode 16.x).
+    # Switch to macos-26 for SDK parity with local builds once it's GA.
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Build and test
+        run: |
+          xcodebuild -project "Table Tool.xcodeproj" -scheme "Table Tool" \
+            -destination 'platform=macOS' test \
+            CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=NO
