@@ -267,9 +267,9 @@
     NSArray *rowArray = [_data objectAtIndex:rowIndex];
     if(rowArray.count > tableColumn.identifier.integerValue){
         if([rowArray[tableColumn.identifier.integerValue] isKindOfClass:[NSDecimalNumber class]]){
-            textCell.alignment = NSRightTextAlignment;
+            textCell.alignment = NSTextAlignmentRight;
         }else{
-            textCell.alignment = NSLeftTextAlignment;
+            textCell.alignment = NSTextAlignmentLeft;
         }
     }
 }
@@ -340,7 +340,7 @@ writeRowsWithIndexes:(NSIndexSet *)rowIndexes
     [pboard declareTypes:validPBoardTypes owner: nil];
     
     // TTRowInternalPboardType is used for app internal movement of rows
-    NSData *serializedRowIndexes = [NSKeyedArchiver archivedDataWithRootObject:rowIndexes];
+    NSData *serializedRowIndexes = [NSKeyedArchiver archivedDataWithRootObject:rowIndexes requiringSecureCoding:YES error:nil];
     [pboard setData:serializedRowIndexes forType:TTRowInternalPboardType];
 
     NSArray *rowDataAtIndexes = [_data objectsAtIndexes:rowIndexes];
@@ -392,7 +392,7 @@ writeRowsWithIndexes:(NSIndexSet *)rowIndexes
             tableView == self.tableView)
         { // NOTE: for now, only drag & drop within the same tableView is supported
             NSData *serializedDraggedRowIndexes = [pboard dataForType:TTRowInternalPboardType];
-            NSIndexSet *draggedRowIndexes = [NSKeyedUnarchiver unarchiveObjectWithData:serializedDraggedRowIndexes];
+            NSIndexSet *draggedRowIndexes = [NSKeyedUnarchiver unarchivedObjectOfClass:[NSIndexSet class] fromData:serializedDraggedRowIndexes error:nil];
             
             return [self moveRowsAtIndexes:draggedRowIndexes toIndex:destinationRow];
         }
