@@ -194,22 +194,6 @@
                             </connections>
                         </segmentedControl>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="B703BD07-0368-4319-B261-2C45F156D82D" label="Convert…" paletteLabel="Convert…" image="NSShareTemplate" id="cxB-ko-x5S">
-                        <nil key="toolTip"/>
-                        <size key="minSize" width="30" height="25"/>
-                        <size key="maxSize" width="34" height="28"/>
-                        <button key="view" verticalHuggingPriority="750" id="gD3-M7-an0">
-                            <rect key="frame" x="13" y="14" width="32" height="28"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSShareTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Da0-dZ-kQ1">
-                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                <font key="font" metaFont="system"/>
-                            </buttonCell>
-                            <connections>
-                                <action selector="exportFile:" target="-1" id="pds-7K-KMj"/>
-                            </connections>
-                        </button>
-                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="L16-81-E18"/>
@@ -217,7 +201,6 @@
                     <toolbarItem reference="uIc-SS-WZD"/>
                     <toolbarItem reference="yQy-V2-Gkq"/>
                     <toolbarItem reference="U88-dC-DZu"/>
-                    <toolbarItem reference="cxB-ko-x5S"/>
                 </defaultToolbarItems>
             </toolbar>
             <connections>
@@ -226,7 +209,4 @@
             <point key="canvasLocation" x="17.5" y="1034.5"/>
         </window>
     </objects>
-    <resources>
-        <image name="NSShareTemplate" width="11" height="16"/>
-    </resources>
 </document>
