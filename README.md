@@ -1,4 +1,4 @@
-<img style='margin: 0 auto' src="Table%20Tool/Images.xcassets/AppIcon.appiconset/icon_128x128@2x.png" width=128 height=128>
+<img style='margin: 0 auto' src="Artwork/AppIcon%20macOS%2026.png" width=128 height=128>
 
 # Table Tool
 
