@@ -33,8 +33,8 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawAddLeftColumnIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
-    NSColor* highlightColor = [NSColor colorWithCalibratedRed: 0.351 green: 0.769 blue: 0.178 alpha: 0.96];
+    NSColor* standardColor = [NSColor secondaryLabelColor];
+    NSColor* highlightColor = [NSColor systemGreenColor];
 
     //// Rectangle Drawing
     NSBezierPath* rectanglePath = [NSBezierPath bezierPathWithRect: NSMakeRect(0, 1, 3, 10)];
@@ -63,8 +63,8 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawAddRightColumnIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
-    NSColor* highlightColor = [NSColor colorWithCalibratedRed: 0.351 green: 0.769 blue: 0.178 alpha: 0.96];
+    NSColor* standardColor = [NSColor secondaryLabelColor];
+    NSColor* highlightColor = [NSColor systemGreenColor];
 
     //// Rectangle Drawing
     NSBezierPath* rectanglePath = [NSBezierPath bezierPathWithRect: NSMakeRect(0, 1, 3, 10)];
@@ -93,8 +93,8 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawDeleteColumnIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
-    NSColor* deleteColor = [NSColor colorWithCalibratedRed: 0.844 green: 0.313 blue: 0.238 alpha: 0.74];
+    NSColor* standardColor = [NSColor secondaryLabelColor];
+    NSColor* deleteColor = [NSColor systemRedColor];
 
     //// Rectangle Drawing
     NSBezierPath* rectanglePath = [NSBezierPath bezierPathWithRect: NSMakeRect(0, 1, 3, 10)];
@@ -123,8 +123,8 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawAddRowBelowIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
-    NSColor* highlightColor = [NSColor colorWithCalibratedRed: 0.351 green: 0.769 blue: 0.178 alpha: 0.96];
+    NSColor* standardColor = [NSColor secondaryLabelColor];
+    NSColor* highlightColor = [NSColor systemGreenColor];
 
     //// Rectangle Drawing
     NSBezierPath* rectanglePath = [NSBezierPath bezierPathWithRect: NSMakeRect(1, 9, 13, 2)];
@@ -153,8 +153,8 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawAddRowAboveIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
-    NSColor* highlightColor = [NSColor colorWithCalibratedRed: 0.351 green: 0.769 blue: 0.178 alpha: 0.96];
+    NSColor* standardColor = [NSColor secondaryLabelColor];
+    NSColor* highlightColor = [NSColor systemGreenColor];
 
     //// Rectangle Drawing
     NSBezierPath* rectanglePath = [NSBezierPath bezierPathWithRect: NSMakeRect(1, 9, 13, 2)];
@@ -183,8 +183,8 @@ static NSImage* _imageOfDeleteRowIcon = nil;
 + (void)drawDeleteRowIcon
 {
     //// Color Declarations
-    NSColor* standardColor = [NSColor colorWithCalibratedRed: 0 green: 0 blue: 0 alpha: 0.321];
-    NSColor* deleteColor = [NSColor colorWithCalibratedRed: 0.844 green: 0.313 blue: 0.238 alpha: 0.74];
+    NSColor* standardColor = [NSColor secondaryLabelColor];
+    NSColor* deleteColor = [NSColor systemRedColor];
 
     //// Rectangle Drawing
     NSBezierPath* rectanglePath = [NSBezierPath bezierPathWithRect: NSMakeRect(1, 9, 13, 2)];
