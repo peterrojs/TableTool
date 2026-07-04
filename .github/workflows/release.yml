@@ -1,9 +1,9 @@
 name: Release
 
+# Releases are now built, signed, and notarized locally via scripts/release.sh
+# (see RELEASING.md); this workflow is kept for manual runs only.
 on:
-  push:
-    tags:
-      - "v*"
+  workflow_dispatch:
 
 permissions:
   contents: write
